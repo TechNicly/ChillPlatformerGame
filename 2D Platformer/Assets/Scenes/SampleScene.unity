@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 58400750}
   - component: {fileID: 58400751}
   - component: {fileID: 58400752}
+  - component: {fileID: 58400753}
   m_Layer: 0
   m_Name: lebonbon
   m_TagString: Untagged
@@ -437,7 +438,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.0018196106
       value: 1
       inSlope: 0
       outSlope: 0
@@ -448,6 +449,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &58400753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58400743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47cf03f4d580a6d48abd45c2d50ec232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2041083838}
+  soundDistance: 30
+  volumeValueChanger: 1
 --- !u!1 &293929971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +3010,7 @@ GameObject:
   - component: {fileID: 2041083842}
   - component: {fileID: 2041083845}
   - component: {fileID: 2041083844}
+  - component: {fileID: 2041083846}
   m_Layer: 0
   m_Name: 374_0
   m_TagString: Player
@@ -3195,6 +3212,19 @@ MonoBehaviour:
   jumpForce: 14
   verticalVelocityThreshold: 0.1
   jumpKey: 32
+--- !u!114 &2041083846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041083838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33aa9698b91eeb6439f93b85c16022b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYLevel: -10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
